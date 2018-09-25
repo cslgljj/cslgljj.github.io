@@ -79,16 +79,17 @@
 
 
 
+<meta name="description" content="git初体验1.Git是一款免费、开源的分布式 版本控制系统 ，用于敏捷高效地处理任何或小或大的项目。 2.Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。 git的三个区要对某个项目使用git进行管理，需要使用git init命令初始化git仓库 git init会在当前目录生成一个隐藏文件夹 .git 不要去修改这个文件夹下的任意">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学习git命令">
 <meta property="og:url" content="http://yoursite.com/2018/09/25/学习git命令/index.html">
 <meta property="og:site_name" content="李俊杰的博客">
+<meta property="og:description" content="git初体验1.Git是一款免费、开源的分布式 版本控制系统 ，用于敏捷高效地处理任何或小或大的项目。 2.Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。 git的三个区要对某个项目使用git进行管理，需要使用git init命令初始化git仓库 git init会在当前目录生成一个隐藏文件夹 .git 不要去修改这个文件夹下的任意">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535014836&di=fafdb400041dc371b853cfb3fcc7b851&imgtype=jpg&er=1&src=http%3A%2F%2Fscdn.file1.gk99.com%2Fphoto%2F2015-09%2F2015-09-11%2F14419580206489.jpg">
-<meta property="og:updated_time" content="2018-09-25T15:54:29.234Z">
+<meta property="og:updated_time" content="2018-09-25T16:07:01.344Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习git命令">
-<meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535014836&di=fafdb400041dc371b853cfb3fcc7b851&imgtype=jpg&er=1&src=http%3A%2F%2Fscdn.file1.gk99.com%2Fphoto%2F2015-09%2F2015-09-11%2F14419580206489.jpg">
+<meta name="twitter:description" content="git初体验1.Git是一款免费、开源的分布式 版本控制系统 ，用于敏捷高效地处理任何或小或大的项目。 2.Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。 git的三个区要对某个项目使用git进行管理，需要使用git init命令初始化git仓库 git init会在当前目录生成一个隐藏文件夹 .git 不要去修改这个文件夹下的任意">
 
 
 
@@ -298,7 +299,13 @@
       
 
       
-        <p><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1535014836&amp;di=fafdb400041dc371b853cfb3fcc7b851&amp;imgtype=jpg&amp;er=1&amp;src=http%3A%2F%2Fscdn.file1.gk99.com%2Fphoto%2F2015-09%2F2015-09-11%2F14419580206489.jpg" alt=""></p>
+        <h1 id="git初体验"><a href="#git初体验" class="headerlink" title="git初体验"></a>git初体验</h1><p>1.Git是一款免费、开源的<strong>分布式</strong> <strong>版本控制系统</strong> ，用于敏捷高效地处理任何或小或大的项目。</p>
+<p>2.Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。</p>
+<h1 id="git的三个区"><a href="#git的三个区" class="headerlink" title="git的三个区"></a>git的三个区</h1><p>要对某个项目使用git进行管理，需要使用<code>git init</code>命令初始化git仓库 <code>git init</code>会在当前目录生成一个隐藏文件夹 .git 不要去修改这个文件夹下的任意东西。</p>
+<p>git仓库会分成三个区</p>
+<p>工作区：我们书写代码的地方，工作的目录就叫工作区。</p>
+<p>暂存区：暂时存储的区域，在git中，代码无法直接从工作区提交到仓库区，而是需要先从工作区添加到暂存区，然后才能从暂存区提交到仓库区。暂存区的目的是避免误操作。</p>
+<p>本地仓库区：将保存在暂存区域的内容永久转储到 Git 仓库中，生成版本号。生成版本号之后，就可以任何的回退到某一个具体的版本。</p>
 
       
     </div>
@@ -383,8 +390,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -430,6 +446,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#git初体验"><span class="nav-number">1.</span> <span class="nav-text">git初体验</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#git的三个区"><span class="nav-number">2.</span> <span class="nav-text">git的三个区</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
