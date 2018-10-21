@@ -87,7 +87,7 @@
 <meta property="og:description" content="apply()和call()的区别一直都不明白apply和call的具体使用原理，然后趁有时间，决定好好研究一番。 JavaScript中的每一个Function对象都有一个apply()方法和一个call()方法，它们的语法分别为： 12345/*apply()方法*/function.apply(thisObj[,argArray])/*call()方法*/function.call(this">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/images/apply和call.png">
-<meta property="og:updated_time" content="2018-10-19T03:39:13.933Z">
+<meta property="og:updated_time" content="2018-10-21T13:08:30.192Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="apply和call的区别">
 <meta name="twitter:description" content="apply()和call()的区别一直都不明白apply和call的具体使用原理，然后趁有时间，决定好好研究一番。 JavaScript中的每一个Function对象都有一个apply()方法和一个call()方法，它们的语法分别为： 12345/*apply()方法*/function.apply(thisObj[,argArray])/*call()方法*/function.call(this">
@@ -304,6 +304,7 @@
         <h1 id="apply-和call-的区别"><a href="#apply-和call-的区别" class="headerlink" title="apply()和call()的区别"></a>apply()和call()的区别</h1><p>一直都不明白apply和call的具体使用原理，然后趁有时间，决定好好研究一番。</p>
 <p>JavaScript中的每一个Function对象都有一个apply()方法和一个call()方法，它们的语法分别为：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">/*apply()方法*/</span><br><span class="line">function.apply(thisObj[,argArray])</span><br><span class="line"></span><br><span class="line">/*call()方法*/</span><br><span class="line">function.call(thisObj,[,arg1[,arg2[,[,...argN]]]]);</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <h1 id="它们各自的定义："><a href="#它们各自的定义：" class="headerlink" title="它们各自的定义："></a>它们各自的定义：</h1><p>apply：调用一个对象的一个方法，用另一个对象替换当前对象。列如：B.apply(A,arguments);即A对象应用B对象的方法。</p>
 <p>call：调用一个对象的一个方法，用另一个对象替换当前对象。例如：B.call(A,args1,args2);即A对象调用B对象的方法。</p>
 <h1 id="它们的共同之处："><a href="#它们的共同之处：" class="headerlink" title="它们的共同之处："></a>它们的共同之处：</h1><p>都可以用来代替另一个对象调用一个方法，将一个函数的对象上下文从初始的上下文改变由thisObj指定的新对象。</p>
@@ -338,6 +339,7 @@
 <p>通常在什么情况下，可以使用apply类似Math.max等之类的特殊用法：</p>
 <p>一般在目标函数只需要n个参数列表，而不接收一个数组的形式，可以通过apply的方式巧妙地解决这个问题。</p>
 <p><img src="/images/apply和call.png" alt=""></p>
+<!--more-->
 
       
     </div>
@@ -372,8 +374,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/09/25/hello-world/" rel="prev" title="Hello World">
-                Hello World <i class="fa fa-chevron-right"></i>
+              <a href="/2017/06/21/http状态码301和302详解和区别/" rel="prev" title="http状态码301和302详解和区别">
+                http状态码301和302详解和区别 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
