@@ -87,7 +87,7 @@
 <meta property="og:description" content="Node.js创建第一个应用如果我们使用PHP来编写后端的代码时，需要Apache 或者 Nginx 的HTTP 服务器，并配上 mod_php5 模块和php-cgi。 从这个角度看，整个”接收 HTTP 请求并提供 Web 页面”的需求根本不需 要 PHP 来处理。 不过对 Node.js 来说，概念完全不一样了。使用 Node.js 时，我们不仅仅 在实现一个应用，同时还实现了整个 HTTP">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/images/node-hello.gif">
-<meta property="og:updated_time" content="2018-10-19T07:25:50.349Z">
+<meta property="og:updated_time" content="2018-10-21T13:13:27.995Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="node创建第一个应用">
 <meta name="twitter:description" content="Node.js创建第一个应用如果我们使用PHP来编写后端的代码时，需要Apache 或者 Nginx 的HTTP 服务器，并配上 mod_php5 模块和php-cgi。 从这个角度看，整个”接收 HTTP 请求并提供 Web 页面”的需求根本不需 要 PHP 来处理。 不过对 Node.js 来说，概念完全不一样了。使用 Node.js 时，我们不仅仅 在实现一个应用，同时还实现了整个 HTTP">
@@ -312,6 +312,7 @@
 </ol>
 <hr>
 
+<a id="more"></a>
 <h1 id="创建Node-js应用"><a href="#创建Node-js应用" class="headerlink" title="创建Node.js应用"></a>创建Node.js应用</h1><h2 id="步骤一、引入required模块"><a href="#步骤一、引入required模块" class="headerlink" title="步骤一、引入required模块"></a>步骤一、引入required模块</h2><p>我们使用require指令来载入http模块，并将实例化的HTTP赋值给变量http，实例如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var http = require(&quot;http&quot;);</span><br></pre></td></tr></table></figure>
 <h2 id="步骤二、创建服务器"><a href="#步骤二、创建服务器" class="headerlink" title="步骤二、创建服务器"></a>步骤二、创建服务器</h2><p>接下来我们使用http.createServer()方法创建服务器，并使用listen方法绑定8888端口。函数通过request,response参数来接收和响应数据。实列如下，在你项目的根目录下创建一个叫server.js的文件，并写入以下代码：</p>
@@ -327,6 +328,7 @@
 </ul>
 <h1 id="Gif实例演示"><a href="#Gif实例演示" class="headerlink" title="Gif实例演示"></a>Gif实例演示</h1><p>接下来我们通过 Gif 图为大家演示实例操作：</p>
 <p><img src="/images/node-hello.gif" alt=""></p>
+<!--more-->
 
       
     </div>
