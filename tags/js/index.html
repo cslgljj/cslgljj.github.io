@@ -79,17 +79,13 @@
 
 
 
-<meta name="description" content="定义与用法sort()方法用于对数组的元素进行排序。 语法：arrayObject.sort(sortby) 注意： sortby必须是函数，规定排序顺序。可选参数">
-<meta property="og:type" content="article">
-<meta property="og:title" content="数组sort的学习">
-<meta property="og:url" content="http://yoursite.com/2018/10/17/数组sort的学习/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="李俊杰的博客">
+<meta property="og:url" content="http://yoursite.com/tags/js/index.html">
 <meta property="og:site_name" content="李俊杰的博客">
-<meta property="og:description" content="定义与用法sort()方法用于对数组的元素进行排序。 语法：arrayObject.sort(sortby) 注意： sortby必须是函数，规定排序顺序。可选参数">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-21T13:10:12.365Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="数组sort的学习">
-<meta name="twitter:description" content="定义与用法sort()方法用于对数组的元素进行排序。 语法：arrayObject.sort(sortby) 注意： sortby必须是函数，规定排序顺序。可选参数">
+<meta name="twitter:title" content="李俊杰的博客">
 
 
 
@@ -119,13 +115,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/17/数组sort的学习/"/>
+  <link rel="canonical" href="http://yoursite.com/tags/js/"/>
 
 
 
 
 
-  <title>数组sort的学习 | 李俊杰的博客</title>
+  <title>标签: js | 李俊杰的博客</title>
   
 
 
@@ -144,7 +140,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -218,149 +214,54 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block tag">
 
-  
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h1>js<small>标签</small>
+        </h1>
+      </div>
 
-  
-  
-  
+      
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/17/数组sort的学习/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="li JunJie">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://q1.qlogo.cn/g?b=qq&nk=493654134&s=5">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="李俊杰的博客">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
-        
-          <h1 class="post-title" itemprop="name headline">数组sort的学习</h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
+            <a class="post-title-link" href="/2017/03/29/js函数的定义与调用方法/" itemprop="url">
               
-                <span class="post-meta-item-text">发表于</span>
+                <span itemprop="name">js函数的定义与调用方法</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-17T16:22:25+08:00">
-                2018-10-17
-              </time>
-            
+            </a>
+        
+      </h2>
 
-            
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2017-03-29T17:21:25+08:00"
+              content="2017-03-29" >
+          03-29
+        </time>
+      </div>
 
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <h1 id="定义与用法"><a href="#定义与用法" class="headerlink" title="定义与用法"></a>定义与用法</h1><p>sort()方法用于对数组的元素进行排序。</p>
-<h1 id="语法："><a href="#语法：" class="headerlink" title="语法："></a>语法：</h1><p>arrayObject.sort(sortby)</p>
-<p><strong>注意：</strong> <strong>sortby</strong>必须是函数，规定排序顺序。可选参数</p>
-<a id="more"></a>
-<p><strong>返回值:</strong></p>
-<p>对数组的引用。请注意，数组在原数组上进行排序，不生成副本。</p>
-<p>说明以及原理：</p>
-<label style="color:red;">如果调用该方法时没有使用参数，将按字母顺序对数组中的元素进行排序，说得更精确点，是按照字符编码的顺序进行排序。要实现这一点，首先应把数组的元素都转换成字符串（如有必要），以便进行比较。<br><br>如果想按照其他标准进行排序，就需要提供比较函数，该函数要比较两个值，然后返回一个用于说明这两个值的相对顺序的数字。比较函数应该具有两个参数 a 和 b，其返回值如下：<br><br>若 a 小于 b，在排序后的数组中 a 应该出现在 b 之前，则返回一个小于 0 的值。<br>若 a 等于 b，则返回 0。<br><br>若 a 大于 b，则返回一个大于 0 的值。</label>
-
-<!--more-->
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2018/06/29/padding-bottom使用和介绍/" rel="next" title="padding-boottom使用和介绍">
-                <i class="fa fa-chevron-left"></i> padding-boottom使用和介绍
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+    </header>
   </article>
 
 
-
-    <div class="post-spread">
       
     </div>
+
   </div>
+  
+  
+  
+
+  
 
 
           </div>
@@ -368,10 +269,6 @@
 
 
           
-
-  
-
-
 
         </div>
         
@@ -392,17 +289,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -495,22 +383,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#定义与用法"><span class="nav-number">1.</span> <span class="nav-text">定义与用法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#语法："><span class="nav-number">2.</span> <span class="nav-text">语法：</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -671,10 +543,6 @@
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
 
   
 
